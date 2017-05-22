@@ -1,0 +1,7 @@
+main: com.nojo121.spigot.Vote
+version: 1.0
+name: BuildingVote
+
+commands:
+  bvote:
+    description: Test
