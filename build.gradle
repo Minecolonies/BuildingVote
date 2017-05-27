@@ -35,6 +35,12 @@ idea {
 repositories {
     mavenLocal()
     mavenCentral()
+    maven {
+        url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+    }
+    maven {
+        url = "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
 }
 
 group = project.property("group")
@@ -43,7 +49,6 @@ sourceCompatibility = project.property("sourceversion")
 
 dependencies {
     compile group: 'org.spigotmc', name: 'spigot-api', version: project.property("apiversion")
-    compile group: 'org.spigotmc', name: 'spigot', version: project.property("apiversion")
 
     // dependencies go here
     // Example:
@@ -75,7 +80,6 @@ jar {
 shadowJar {
     dependencies {
         exclude(dependency('org.spigotmc:spigot-api:.*'))
-        exclude(dependency('org.spigotmc:spigot:.*'))
     }
 }
 

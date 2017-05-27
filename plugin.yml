@@ -1,6 +1,7 @@
 main: com.nojo121.spigot.Vote
 version: 1.0
 name: BuildingVote
+authors: [nojo121, Kostronor]
 
 commands:
   bvote:
